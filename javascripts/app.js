@@ -17,6 +17,12 @@ console.log(orc.toString());
 var spell = new Gauntlet.SpellBook.Sphere();
 console.log("spell: ", spell.toString());
 
+var broadSword1 = new BroadSword();
+console.log(broadSword1.toString());
+
+var dagger1 = new Dagger();
+console.log(dagger1.toString());
+
 
 $(document).ready(function() {
   console.log("document ready!")

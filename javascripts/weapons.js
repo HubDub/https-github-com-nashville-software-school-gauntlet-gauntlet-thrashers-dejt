@@ -3,8 +3,11 @@ var Weapon = function() {
   this.damage = 1;
   this.hands = 2;
 
+  this.attackDamage = function() {
+    return Math.floor(Math.random() * 10 + this.damage);
+  }
   this.toString = function() {
-    return this.name + " hits for " + this.damage + " damage!";
+    return this.name + " hits for " + this.attackDamage() + " damage!";
   }
 };
 
