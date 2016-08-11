@@ -12,7 +12,7 @@ orc.setWeapon(new BroadSword());
 console.log(orc.toString());
 
 /*
-  Test code to generate a spell
+  Test code to generate a spell & BroadSword weapon damage
  */
 var spell = new Gauntlet.SpellBook.Sphere();
 console.log("spell: ", spell.toString());
@@ -58,5 +58,10 @@ $(document).ready(function() {
     $(".card").hide();
     $("." + previousCard).show();
   });
-
-});
+/*new code: when attack button is pressed event listener*/
+  $(".attack__button").click(function(e) {
+    console.log("you pressed the attack button");
+    var spell = new Gauntlet.SpellBook.Sphere();
+    console.log("spell: ", spell.toString());
+    $("#inputDamageStats").text(spell.toString());
+  });
