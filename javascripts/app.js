@@ -6,7 +6,7 @@ warrior.setWeapon(new WarAxe());
 warrior.generateClass();  // This will be used for "Surprise me" option
 // console.log(warrior.toString());
 
-// THOM- Creating a new player object for Combatants
+// THOM- Creating a new player object for Combatants//////////////////
 // set race to human by default
 var playerOne = new Gauntlet.Combatants.Human();
 
@@ -17,21 +17,90 @@ playerOne.playerName= $("#player-name").val();
  console.dir(playerOne);
 });
 console.log( playerOne.playerName);
+////////////////EVENT LISTENERS FOR WEAPON BUTTONS////////////////////
+$("#Dagger").click(function(){
+  console.log("you picked the Dagger")
+  playerOne.weapon = new Dagger();
+  console.log(playerOne);
+})
+
+$("#BroadSword").click(function(){
+  console.log("you picked the BroadSword")
+  playerOne.weapon = new BroadSword();
+  console.log(playerOne);
+})
+
+$("#WarAxe").click(function(){
+  console.log("you picked the WarAxe")
+  playerOne.weapon = new WarAxe();
+  console.log(playerOne);
+})
+
+$("#Javelin").click(function(){
+  console.log("you picked the Javelin")
+  playerOne.weapon = new Javelin();
+  console.log(playerOne);
+})
+
+$("#ShortBow").click(function(){
+  console.log("you picked the ShortBow")
+  playerOne.weapon = new ShortBow();
+  console.log(playerOne);
+})
+
+$("#Warhammer").click(function(){
+  console.log("you picked the Warhammer")
+  playerOne.weapon = new Warhammer();
+  console.log(playerOne);
+})
+
+$("#Glaive").click(function(){
+  console.log("you picked the Glaive")
+  playerOne.weapon = new Glaive();
+  console.log(playerOne);
+})
+
+$("#Trident").click(function(){
+  console.log("you picked the Trident")
+  playerOne.weapon = new Trident();
+  console.log(playerOne);
+})
+
+$("#Blowgun").click(function(){
+  console.log("you picked the Blowgun")
+  playerOne.weapon = new Blowgun();
+  console.log(playerOne);
+})
+
+$("#ThrowingStar").click(function(){
+  console.log("you picked the ThrowingStar")
+  playerOne.weapon = new ThrowingStar();
+  console.log(playerOne);
+})
+
+$("#Flail").click(function(){
+  console.log("you picked the Flail")
+  playerOne.weapon = new Flail();
+  console.log(playerOne);
+})
+
+$("#Whip").click(function(){
+  console.log("you picked the Whip")
+  playerOne.weapon = new Whip();
+  console.log(playerOne);
+})
 
 
 
 
-// console.log("playername", playerName);
+
+
+
+
+// RESEARCH THIS SECTION
 // warrior.setWeapon(new WarAxe());
-
-
 // warrior.generateClass();
-
-
 // console.log(warrior.toString());
-
-
-
 
 var orc = new Gauntlet.Combatants.Orc();
 orc.generateClass();
