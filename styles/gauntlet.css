@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 10px;
   font-size: 3em;
+  background-image: url("https://images.alphacoders.com/293/293771.jpg");
+  background-size: fixed;
+  background-position: left;
 }
 
 .field {
@@ -21,12 +24,13 @@ body {
 /*
   Section styles
  */
-.card { 
+.card {
   display: none;
 }
 
 .card__prompt {
   font-size: 1.1em;
+  color: #ECB127;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -46,6 +50,7 @@ body {
 .btn {
   text-decoration: none;
   background-color: white;
+ /* background-image: url(http://i773.photobucket.com/albums/yy19/farmersgoddess/Animated/mediafile1.gif);*/
   color: #888;
   border-radius: 5px;
   display: inline-block;
@@ -58,27 +63,33 @@ body {
 }
 
 .btn--orange {
-  border-color: #FF4136;
+  border-color: #000000;
   color: white;
-  background-color: #FF4136;
+  background-image: url(http://i773.photobucket.com/albums/yy19/farmersgoddess/Animated/mediafile1.gif);
+/*  background-color: #8B5F20;*/
 }
 
 .btn--blue {
-  border-color: #0074D9;
+  border: 3px solid black;
+/*  border-color: #ECB127;*/
   color: white;
-  background-color: #0074D9;
+  background-color: #8C8C68;
+/*  background-image: url(http://i773.photobucket.com/albums/yy19/farmersgoddess/Animated/mediafile1.gif);*/
+background-image: url(http://downtrend.com/wp-content/uploads/2015/04/Obama-Administration-Transparency.jpg);
 }
 
 .btn--yellow {
-  border-color: #E4BD00;
+  border: 3px solid black;
+/*  border-color: #000000;*/
   color: white;
   background-color: #F3C500;
+  background-image: url(http://downtrend.com/wp-content/uploads/2015/04/Obama-Administration-Transparency.jpg);
 }
 
 .btn--big {
   font-size: 28px;
   padding: 10px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .btn--small {
@@ -86,7 +97,7 @@ body {
 }
 
 .btn__prompt {
-  background-color: white;
+  background-color: black;
   color: #fff;
   padding-right: 12px;
   padding-left: 12px;
