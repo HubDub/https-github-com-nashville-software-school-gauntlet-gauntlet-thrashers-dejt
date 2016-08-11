@@ -1,16 +1,18 @@
 /*
   Test code to generate a human player and an orc player
  */
-var warrior = new Gauntlet.Combatants.Human();
-warrior.setWeapon(new WarAxe());
-warrior.generateClass();  // This will be used for "Surprise me" option
-// console.log(warrior.toString());
+// var Shaman = new Gauntlet.Combatants.Human();
+// Shaman.setWeapon(new WarAxe());
+// Shaman.generateClass();  // This will be used for "Surprise me" option
+// console.log(Shaman.toString());
 
 // THOM- Creating a new player object for Combatants
 // set race to human by default
 var playerOne = new Gauntlet.Combatants.Human();
 
 // add event listner to input field and store the value in the variable playerName
+
+////event handlers for classes///////
 $("#name_button" ).click(function() {
 playerOne.playerName= $("#player-name").val();
  console.log( playerOne.playerName);
@@ -18,17 +20,86 @@ playerOne.playerName= $("#player-name").val();
 });
 console.log( playerOne.playerName);
 
+$("#Warrior").click(function(){
+  console.log("you picked the Warrior");
+  playerOne.class = new Gauntlet.GuildHall.Warrior();
+  console.log(playerOne);
+})
 
+$("#Valkyrie").click(function(){
+  console.log("you picked the Valkyrie");
+  playerOne.class = new Gauntlet.GuildHall.Valkyrie;
+  console.log(playerOne);
+})
 
+$("#Berserker").click(function(){
+  console.log("you picked the Berserker");
+  playerOne.class = new Gauntlet.GuildHall.Berserker;
+  console.log(playerOne);
+})
+
+$("#Monk").click(function(){
+  console.log("you picked the Monk");
+  playerOne.class = new Gauntlet.GuildHall.Monk;
+  console.log(playerOne);
+})
+
+$("#Shaman").click(function(){
+  console.log("you picked the Shaman");
+  playerOne.class = new Gauntlet.GuildHall.Shaman;
+  console.log(playerOne);
+})
+
+$("#Wizard").click(function(){
+  console.log("you picked the Wizard");
+  playerOne.class = new Gauntlet.GuildHall.Wizard;
+  console.log(playerOne);
+})
+
+$("#Conjurer").click(function(){
+  console.log("you picked the Conjurer");
+  playerOne.class = new Gauntlet.GuildHall.Conjurer;
+  console.log(playerOne);
+})
+
+$("#Sorcerer").click(function(){
+  console.log("you picked the Sorcerer");
+  playerOne.class = new Gauntlet.GuildHall.Sorcerer;
+  console.log(playerOne);
+})
+
+$("#Thief").click(function(){
+  console.log("you picked the Thief");
+  playerOne.class = new Gauntlet.GuildHall.Thief;
+  console.log(playerOne);
+})
+
+$("#Ninja").click(function(){
+  console.log("you picked the Ninja");
+  playerOne.class = new Gauntlet.GuildHall.Ninja;
+  console.log(playerOne);
+})
+
+$("#Assassin").click(function(){
+  console.log("you picked the Assassin");
+  playerOne.class = new Gauntlet.GuildHall.Assassin;
+  console.log(playerOne);
+})
+
+$("#Rogue").click(function(){
+  console.log("you picked the Rogue");
+  playerOne.class = new Gauntlet.GuildHall.Rogue;
+  console.log(playerOne);
+})
 
 // console.log("playername", playerName);
-// warrior.setWeapon(new WarAxe());
+// Shaman.setWeapon(new WarAxe());
 
 
-// warrior.generateClass();
+// Shaman.generateClass();
 
 
-// console.log(warrior.toString());
+// console.log(Shaman.toString());
 
 
 
