@@ -13,7 +13,7 @@
 <!-- <img src="https://images.alphacoders.com/293/293771.jpg"> -->
 
   <article id="game-container">
-
+<!-- Player Setup Page -->
     <section id="player-setup" class="card card--name">
       <div class="card__prompt">
         <div>RECORD YOUR NAME, ADVENTURER</div>
@@ -22,7 +22,8 @@
         </div>
       </div>
 
-      <div class="card__button">
+
+      <div id="name_button" class="card__button">
         <a class="card__link btn btn--big btn--orange"
            href="#"
            next="card--class">
@@ -31,7 +32,7 @@
         </a>
       </div>
     </section>
-
+<!-- Class Select Page -->
     <section id="class-select" class="card card--class">
       <div class="card__prompt">
         <div>CHOOSE YOUR PATH</div>
@@ -48,28 +49,27 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-4">
-            <div class="card__button">
+            <div id="Warrior" class="card__button">
               <a class="class__link btn btn--big btn--blue" href="#">
                 <span class="btn__prompt"></span>
                 <span class="btn__text">Warrior</span>
               </a>
             </div>
 
-            <div class="card__button">
+            <div id="Valkyrie" class="card__button">
               <a class="class__link btn btn--big btn--blue" href="#">
                 <span class="btn__prompt"></span>
                 <span class="btn__text">Valkyrie</span>
               </a>
             </div>
-
-            <div class="card__button">
+            <div id="Berserker" class="card__button">
               <a class="class__link btn btn--big btn--blue" href="#">
                 <span class="btn__prompt"></span>
                 <span class="btn__text">berserker</span>
               </a>
             </div>
 
-            <div class="card__button">
+            <div id="Monk" class="card__button">
               <a class="class__link btn btn--big btn--blue" href="#">
                 <span class="btn__prompt"></span>
                 <span class="btn__text">Monk</span>
@@ -78,50 +78,59 @@
           </div>
 
           <div class="col-sm-4">
-            <div class="card__button">
+            <div id="Wizard" class="card__button">
               <a class="class__link btn btn--big btn--blue" href="#">
                 <span class="btn__prompt"></span>
                 <span class="btn__text">Wizard</span>
               </a>
             </div>
 
-            <div class="card__button">
+            <div id="Sorcerer" class="card__button">
               <a class="class__link btn btn--big btn--blue" href="#">
                 <span class="btn__prompt"></span>
                 <span class="btn__text">Sorcerer</span>
               </a>
             </div>
 
-            <div class="card__button">
+            <div id="Conjurer" class="card__button">
               <a class="class__link btn btn--big btn--blue" href="#">
                 <span class="btn__prompt"></span>
                 <span class="btn__text">Conjurer</span>
               </a>
             </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card__button">
+
+            <div id="Thief"class="card__button">
               <a class="class__link btn btn--big btn--blue" href="#">
                 <span class="btn__prompt"></span>
                 <span class="btn__text">Thief</span>
               </a>
             </div>
 
-            <div class="card__button">
+          </div>
+
+          <div class="col-sm-4">
+            <div id="Ninja" class="card__button">
               <a class="class__link btn btn--big btn--blue" href="#">
                 <span class="btn__prompt"></span>
                 <span class="btn__text">Ninja</span>
               </a>
             </div>
 
-            <div class="card__button">
+            <div id="Assassin" class="card__button">
               <a class="class__link btn btn--big btn--blue" href="#">
                 <span class="btn__prompt"></span>
                 <span class="btn__text">Assassin</span>
               </a>
             </div>
 
-            <div class="card__button">
+            <div id="Rogue" class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt">></span>
+                <span class="btn__text">Rogue</span>
+              </a>
+            </div>
+
+            <div id="SurpriseMe" class="card__button">
               <a class="class__link btn btn--big btn--yellow" href="#">
                 <span class="btn__prompt"></span>
                 <span class="btn__text">surprise me</span>
@@ -140,7 +149,7 @@
         </a>
       </div>
     </section>
-
+<!-- Weapon Select Page -->
     <section id="weapon-select" class="card card--weapon">
       <div class="card__prompt">
         <div>choose your weapon</div>
@@ -154,18 +163,125 @@
         </div>
       </div>
 
-      <div class="card__button">
-        <a class="card__link btn btn--big btn--orange"
-           href="#"
-           next="card--battleground">
-          <span class="btn__prompt"></span>
-          <span class="btn__text">defeat your enemies</span>
-        </a>
+<div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4">
+            <div id = "Dagger" class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt">></span>
+                <span class="btn__text">Dagger</span>
+              </a>
+            </div>
+
+            <div id = "BroadSword" class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt">></span>
+                <span class="btn__text">BroadSword</span>
+              </a>
+            </div>
+
+            <div id = "WarAxe" class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt">></span>
+                <span class="btn__text">War Axe</span>
+              </a>
+            </div>
+
+            <div id= "Javelin" class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt">></span>
+                <span class="btn__text">Javelin</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div id = "ShortBow" class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt">></span>
+                <span class="btn__text">Short Bow</span>
+              </a>
+            </div>
+
+            <div id = "Warhammer" class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt">></span>
+                <span  class="btn__text">War Hammer</span>
+              </a>
+            </div>
+
+            <div id = "Glaive" class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt">></span>
+                <span class="btn__text">Glaive</span>
+              </a>
+            </div>
+
+            <div id = "Trident" class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt">></span>
+                <span class="btn__text">Trident</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div id = "Blowgun" class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt">></span>
+                <span class="btn__text">Blowgun</span>
+              </a>
+            </div>
+
+            <div id = "ThrowingStar" class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt">></span>
+                <span class="btn__text">Throwing Stars</span>
+              </a>
+            </div>
+
+            <div id = "Flail" class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt">></span>
+                <span class="btn__text">Flail</span>
+              </a>
+            </div>
+
+            <div id = "Whip" class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt">></span>
+                <span class="btn__text">Whip</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+          <div class="card__button">
+            <a class="card__link btn btn--big btn--orange"
+               href="#"
+               next="card--battleground">
+              <span class="btn__prompt"></span>
+              <span class="btn__text">defeat your enemies</span>
+            </a>
+          </div>
+          </div>
+        </section>
+    <section id="battleground" class="card card--battleground">
+      <div class="container">
+        <div class="row">
+          <div class="card__prompt">Two Men Enter, One Man Leave!!</div>
+          <div id="inputCombatStats"></div>
+          <div id="inputDamageStats"></div>
+        </div>
+        <div class="card__button attack__button">
+          <div class="btn btn--big btn--orange">
+          <span class="btn__text">ATTACK</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="battleground" class="card card--battleground"></section>
-
+<!-- </div> -->
   </article>
 
   <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
