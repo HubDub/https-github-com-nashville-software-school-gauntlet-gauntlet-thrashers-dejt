@@ -4,7 +4,7 @@ var Weapon = function() {
   this.hands = 2;
 
   this.toString = function() {
-    return this.name;
+    return this.name + " hits for " + this.damage + " damage!";
   }
 };
 
@@ -17,7 +17,7 @@ Dagger.prototype = new Weapon();
 
 var BroadSword = function() {
   this.name = "broad sword";
-  this.damage = 14;
+  this.damage = 14
   this.hands = 2;
 };
 BroadSword.prototype = new Weapon();
