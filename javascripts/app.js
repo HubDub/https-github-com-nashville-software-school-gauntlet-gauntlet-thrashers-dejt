@@ -1,4 +1,4 @@
-/*
+ /*
   Test code to generate a human player and an orc player
  */
 // var Shaman = new Gauntlet.Combatants.Human();
@@ -251,4 +251,5 @@ $(document).ready(function() {
     $("#inputDamageStats").text(spell.toString());
   });
 });
+
 
