@@ -19,6 +19,7 @@ console.log("spell: ", spell.toString());
 
 
 $(document).ready(function() {
+  console.log("document ready!")
   /*
     Show the initial view that accepts player name
    */
@@ -39,7 +40,9 @@ $(document).ready(function() {
       case "card--weapon":
         moveAlong = ($("#player-name").val() !== "");
         break;
-    }
+      case "card--battleground":
+        moveAlong = ($("#player-name").val() !== "");
+      }
 
     if (moveAlong) {
       $(".card").hide();
@@ -61,6 +64,4 @@ $(document).ready(function() {
     var spell = new Gauntlet.SpellBook.Sphere();
     console.log("spell: ", spell.toString());
     $("#inputDamageStats").text(spell.toString());
-
   });
-});
