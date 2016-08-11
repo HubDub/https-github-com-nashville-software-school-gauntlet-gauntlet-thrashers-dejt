@@ -19,6 +19,7 @@ console.log("spell: ", spell.toString());
 
 
 $(document).ready(function() {
+  console.log("document ready!")
   /*
     Show the initial view that accepts player name
    */
