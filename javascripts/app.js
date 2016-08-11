@@ -12,14 +12,14 @@ var playerOne = new Gauntlet.Combatants.Human();
 
 // add event listner to input field and store the value in the variable playerName
 
-////event handlers for classes///////
 $("#name_button" ).click(function() {
 playerOne.playerName= $("#player-name").val();
  console.log( playerOne.playerName);
  console.dir(playerOne);
 });
-console.log( playerOne.playerName);
+// console.log(playerOne.playerName);
 
+////event handlers for classes///////
 $("#Warrior").click(function(){
   console.log("you picked the Warrior");
   playerOne.class = new Gauntlet.GuildHall.Warrior();
@@ -185,25 +185,26 @@ $("#Whip").click(function(){
 // warrior.generateClass();
 // console.log(warrior.toString());
 
-var orc = new Gauntlet.Combatants.Orc();
-orc.generateClass();
-orc.setWeapon(new BroadSword());
-// console.log(orc.toString());
+
+// console.log(playerOne.toString());
+
+// $("#inputCombatStats").append(playerOne);
 
 /*
   Test code to generate a spell & BroadSword weapon damage
  */
-var spell = new Gauntlet.SpellBook.Sphere();
+// var spell = new Gauntlet.SpellBook.Sphere();
 // console.log("spell: ", spell.toString());
 
-var broadSword1 = new BroadSword();
-console.log(broadSword1.toString());
+// var broadSword1 = new BroadSword();
+// console.log(broadSword1.toString());
 
-var dagger1 = new Dagger();
-console.log(dagger1.toString());
+// var dagger1 = new Dagger();
+// console.log(dagger1.toString());
 
 
 $(document).ready(function() {
+  var orc;
   // console.log("document ready!")
   /*
     Show the initial view that accepts player name
@@ -227,6 +228,17 @@ $(document).ready(function() {
         break;
       case "card--battleground":
         moveAlong = ($("#player-name").val() !== "");
+        function beginCombat(playerOne) {
+          orc = new Gauntlet.Combatants.Orc();
+          orc.generateClass();
+          orc.setWeapon(new BroadSword());
+          console.log(orc.toString());
+          console.log(orc)
+          $("#inputEnemyStats").text(orc.toString());
+          $("#inputPlayerStats").append(playerOne.toString());
+
+        }
+        beginCombat(playerOne)
       }
 
     if (moveAlong) {
@@ -246,9 +258,9 @@ $(document).ready(function() {
 /*new code: when attack button is pressed event listener*/
   $(".attack__button").click(function(e) {
     console.log("you pressed the attack button");
-    var spell = new Gauntlet.SpellBook.Sphere();
-    console.log("spell: ", spell.toString());
-    $("#inputDamageStats").text(spell.toString());
+    var foe = new Gauntlet.Combatants.Monster();
+    // console.log("spell: ", spell.toString());
+    $("#inputEnemyAttack").text(orc.weapon.toString());
+    $("#inputPlayerAttack").text(playerOne.weapon.toString());
   });
 });
-
