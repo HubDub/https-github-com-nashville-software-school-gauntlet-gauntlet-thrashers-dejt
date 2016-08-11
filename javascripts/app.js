@@ -66,3 +66,4 @@ $(document).ready(function() {
     $("#inputDamageStats").text(spell.toString());
   });
 });
+
