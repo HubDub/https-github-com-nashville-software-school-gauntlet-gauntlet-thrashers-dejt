@@ -65,3 +65,4 @@ $(document).ready(function() {
     console.log("spell: ", spell.toString());
     $("#inputDamageStats").text(spell.toString());
   });
+});
