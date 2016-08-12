@@ -268,8 +268,11 @@ $(document).ready(function() {
     console.log("The orc's health is now: ", orc.health);
     console.log(playerOne.playerName, "'s health is now: ", playerOne.health);
     $("#inputPlayerAttack").text(playerOne.playerName + playerOne.weapon.toString(player1Damage));
+    $("#inputPlayerAttack").append("<p>" + playerOne.playerName + "'s hitpoints are now " + playerOne.health + "." + "</p>");
+
     // $("#inputEnemyAttack").text(orc.weapon.toString(orcDamage));
     $("#inputEnemyAttack").text("Badguy Bill" + " hits with " + orc.weapon.name + " for " + orcDamage + "!")
+    $("#inputEnemyAttack").append("<p>" + "Badguy Bill" + " hitpoints are now " + orc.health + "." + "</p>")
     finalCountdown(orc);
   });
 });
