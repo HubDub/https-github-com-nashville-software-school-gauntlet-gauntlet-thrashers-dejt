@@ -114,3 +114,8 @@ background-image: url(http://downtrend.com/wp-content/uploads/2015/04/Obama-Admi
   padding: 0 50px 0 20px;
   border-radius: 0 5px 5px 0;
 }
+
+.text-center
+{
+    text-align: center;
+}
