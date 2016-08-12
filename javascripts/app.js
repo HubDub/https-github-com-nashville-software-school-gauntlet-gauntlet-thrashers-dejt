@@ -279,12 +279,14 @@ $(document).ready(function() {
 
 function finalCountdown(orc){
   if (playerOne.health <= 0){
-    $("#finalCountdown").prop('disabled', true)
+    $("#hideAttack").hide()
+    // $("#hideAttack").prop('disabled', true)
     console.log ("YOU LOSE!");
     $("#finalCountdown").text("YOU LOSE!")
   }
   else
     if (orc.health<=0){
+    $("#hideAttack").hide()
       $("#finalCountdown").prop('disabled', true)
       console.log ("YOU WIN!");
       $("#finalCountdown").text("YOU WIN!")
