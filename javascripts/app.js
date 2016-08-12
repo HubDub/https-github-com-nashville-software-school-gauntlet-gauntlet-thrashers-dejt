@@ -92,14 +92,12 @@ $("#Rogue").click(function(){
   console.log(playerOne);
 })
 
-// console.log("playername", playerName);
-// Shaman.setWeapon(new WarAxe());
+$("#SurpriseMe").click(function(){
+  console.log("you picked the SurpriseMe");
+  playerOne.class = new Gauntlet.GuildHall.Warrior;
+  console.log(playerOne);
+})
 
-
-// Shaman.generateClass();
-
-
-// console.log(Shaman.toString());
 ////////////////EVENT LISTENERS FOR WEAPON BUTTONS////////////////////
 $("#Dagger").click(function(){
   console.log("you picked the Dagger")
@@ -173,13 +171,6 @@ $("#Whip").click(function(){
   console.log(playerOne);
 })
 
-
-
-
-
-
-
-
 // RESEARCH THIS SECTION
 // warrior.setWeapon(new WarAxe());
 // warrior.generateClass();
@@ -205,7 +196,7 @@ $("#Whip").click(function(){
 
 $(document).ready(function() {
   var orc;
-  // console.log("document ready!")
+  // console.log("orc ready!")
   /*
     Show the initial view that accepts player name
    */
@@ -228,6 +219,7 @@ $(document).ready(function() {
         break;
       case "card--battleground":
         moveAlong = ($("#player-name").val() !== "");
+
         function beginCombat(playerOne) {
           orc = new Gauntlet.Combatants.Orc();
           orc.generateClass();
