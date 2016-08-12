@@ -6,7 +6,7 @@ var Weapon = function() {
   this.attackDamage = function() {
     return Math.floor(Math.random() * 10 + this.damage);
   }
-  this.toString = function() {
+  this.toString = function(player1Damage) {
     return this.name + " hits for " + this.attackDamage() + " damage!";
   }
 };

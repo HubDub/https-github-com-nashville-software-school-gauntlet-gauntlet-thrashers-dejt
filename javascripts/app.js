@@ -223,13 +223,16 @@ $(document).ready(function() {
         function beginCombat(playerOne) {
           orc = new Gauntlet.Combatants.Orc();
           orc.generateClass();
+          console.log(orc.health);
+          orcHealth = orc.health;
+          console.log("orc's health: ", orcHealth);
+          playerHealth = playerOne.health;
+          console.log("human health: ", playerHealth);
           orc.setWeapon(new BroadSword());
           console.log(orc.toString());
           console.log(orc)
           $("#inputEnemyStats").text(orc.toString());
           $("#inputPlayerStats").append(playerOne.toString());
-          ;
-
         }
         beginCombat(playerOne)
       }
@@ -253,7 +256,19 @@ $(document).ready(function() {
     console.log("you pressed the attack button");
     // var foe = new Gauntlet.Combatants.Monster();
     // console.log("spell: ", spell.toString());
-    $("#inputEnemyAttack").text(orc.weapon.toString());
-    $("#inputPlayerAttack").text(playerOne.weapon.toString());console.log(playerOne.Weapon.attackDamage);
+    // console.log("player one health at start: ", playerHealth);
+    var player1Damage = playerOne.weapon.attackDamage();
+    console.log("player one inflicts this damage: ", player1Damage);
+    var orcDamage = orc.weapon.attackDamage();
+    console.log("orc inflicts this damage: ", orcDamage);
+
+    console.log("orc health: ", orc.health);
+
+    console.log("human health: ",playerOne.health);
+    orc.health = orc.health - player1Damage;
+    console.log("this is now the orc's health: ", orc.health);
+    // $("#inputEnemyAttack").text(orc.weapon.toString(orcDamage));
+    // $("#inputPlayerAttack").text(playerOne.weapon.toString(player1Dave));
+    // console.log(playerOne.Weapon.attackDamage);
   });
 });
