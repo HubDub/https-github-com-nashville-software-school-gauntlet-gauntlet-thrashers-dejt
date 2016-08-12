@@ -31,7 +31,7 @@ Gauntlet.Combatants.Player = function(name) {
       this.class,
       " with ",
       this.health,
-      " health. ",
+      " health ",
       (this.class.magical) ? "Able to cast " : " wielding a ",
       this.weapon.name,
       "!"

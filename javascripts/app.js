@@ -228,6 +228,7 @@ $(document).ready(function() {
           console.log(orc)
           $("#inputEnemyStats").text(orc.toString());
           $("#inputPlayerStats").append(playerOne.toString());
+          ;
 
         }
         beginCombat(playerOne)
@@ -250,9 +251,9 @@ $(document).ready(function() {
 /*new code: when attack button is pressed event listener*/
   $(".attack__button").click(function(e) {
     console.log("you pressed the attack button");
-    var foe = new Gauntlet.Combatants.Monster();
+    // var foe = new Gauntlet.Combatants.Monster();
     // console.log("spell: ", spell.toString());
     $("#inputEnemyAttack").text(orc.weapon.toString());
-    $("#inputPlayerAttack").text(playerOne.weapon.toString());
+    $("#inputPlayerAttack").text(playerOne.weapon.toString());console.log(playerOne.Weapon.attackDamage);
   });
 });
