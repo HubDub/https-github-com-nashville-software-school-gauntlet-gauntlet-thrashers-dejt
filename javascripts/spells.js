@@ -31,6 +31,8 @@ Gauntlet.SpellBook.Sphere = function() {
   this.type = this.damageTypes[random];
 };
 Gauntlet.SpellBook.Sphere.prototype = new Gauntlet.SpellBook.Spell();
+
+
 ////////////////////////////////////////////////////////////////////////////
 // Gauntlet.SpellBook.Fireball = function() {
 //   this.name = "Fireball";

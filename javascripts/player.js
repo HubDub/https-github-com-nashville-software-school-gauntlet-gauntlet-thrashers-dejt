@@ -13,7 +13,7 @@ Gauntlet.Combatants.Player = function(name) {
   this.class = null;
   this.weapon = null;
 
-  this.playerName = name || "unknown adventurer";
+  this.playerName = name || "Oscar the Orc";
   this.health = Math.floor(Math.random() * 40 + 50);
   this.limbs = ["head", "neck", "arm", "leg", "torso"];
   this.skinColor = "gray";
@@ -44,20 +44,21 @@ Gauntlet.Combatants.Player.prototype.setWeapon = function(newWeapon) {
   this.weapon = newWeapon;
 }
 
-Gauntlet.Combatants.Player.prototype.generateClass = function() {
-  // Get a random index from the allowed classes array
-  var random = Math.round(Math.random() * (this.allowedClasses.length - 1));
+// thom- this is not being used!
+// Gauntlet.Combatants.Player.prototype.generateClass = function() {
+//   // Get a random index from the allowed classes array
+//   var random = Math.round(Math.random() * (this.allowedClasses.length - 1));
 
-  // Get the string at the index
-  var randomClass = this.allowedClasses[random];
+//   // Get the string at the index
+//   var randomClass = this.allowedClasses[random];
+//   console.log("randomClass worked")
+//   // Composes the corresponding player class into the player object
+//   this.class = new Gauntlet.GuildHall[randomClass]();
 
-  // Composes the corresponding player class into the player object
-  this.class = new Gauntlet.GuildHall[randomClass]();
-
-  // Add the health bonus
-  this.health += this.class.healthBonus;
-  return this.class;
-};
+//   // Add the health bonus
+//   this.health += this.class.healthBonus;
+//   return this.class;
+// };
 
 /*
   Define the base properties for a human in a
