@@ -270,5 +270,36 @@ $(document).ready(function() {
     $("#inputPlayerAttack").text(playerOne.playerName + playerOne.weapon.toString(player1Damage));
     // $("#inputEnemyAttack").text(orc.weapon.toString(orcDamage));
     $("#inputEnemyAttack").text("Badguy Bill" + " hits with " + orc.weapon.name + " for " + orcDamage + "!")
+    finalCountdown(orc);
   });
 });
+
+function finalCountdown(orc){
+  if (playerOne.health <= 0){
+    $("#finalCountdown").prop('disabled', true)
+    console.log ("YOU LOSE!");
+    $("#finalCountdown").text("YOU LOSE!")
+  }
+  else
+    if (orc.health<=0){
+      $("#finalCountdown").prop('disabled', true)
+      console.log ("YOU WIN!");
+      $("#finalCountdown").text("YOU WIN!")
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
