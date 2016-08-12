@@ -1,0 +1,125 @@
+body {
+  font-family: "Lato", "Helvetica", "sans-serif";
+  margin: 0;
+  padding: 10px;
+  font-size: 3em;
+  background-image: url("https://images.alphacoders.com/293/293771.jpg");
+  background-size: fixed;
+  background-position: left;
+}
+
+.field {
+  margin: 20px 0 0 0;
+}
+
+.field__textinput {
+  font-size: 1em;
+  padding: 15px 0;
+  text-align: center;
+  min-width: 500px;
+}
+
+
+
+/*
+  Section styles
+ */
+.card {
+  display: none;
+}
+
+.card__prompt {
+  font-size: 1.1em;
+  color: #ECB127;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card__button {
+  font-size: 1.1em;
+  margin: 30px 0 0 0;
+  text-align: center;
+}
+
+
+/*
+  Button styles
+ */
+
+.btn {
+  text-decoration: none;
+  background-color: 0,0,0,.0001;
+ /* background-image: url(http://i773.photobucket.com/albums/yy19/farmersgoddess/Animated/mediafile1.gif);*/
+  color: #888;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 5px;
+  min-width: 260px;
+}
+
+.btn--orange {
+  border-color: #000000;
+  color: white;
+  background-image: url(http://i773.photobucket.com/albums/yy19/farmersgoddess/Animated/mediafile1.gif);
+/*  background-color: #8B5F20;*/
+}
+
+.btn--blue {
+  border: 3px solid black;
+/*  border-color: #ECB127;*/
+  color: white;
+  background-color: #8C8C68;
+/*  background-image: url(http://i773.photobucket.com/albums/yy19/farmersgoddess/Animated/mediafile1.gif);*/
+background-image: url(http://downtrend.com/wp-content/uploads/2015/04/Obama-Administration-Transparency.jpg);
+}
+
+.btn--yellow {
+  border: 3px solid black;
+/*  border-color: #000000;*/
+  color: white;
+  background-color: #8C8C68;
+  background-image: url(http://downtrend.com/wp-content/uploads/2015/04/Obama-Administration-Transparency.jpg);
+}
+
+.btn--big {
+  font-size: 28px;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.btn--small {
+  min-width: 50px;
+}
+
+.btn__prompt {
+  background-color: black;
+  color: #fff;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: -10px;
+  font-weight: 600;
+  background-color: #333;
+  opacity: .4;
+  border-radius: 5px 0 0 5px;
+  left: 37px;
+  float: left;
+}
+
+.btn__text {
+  padding: 0 50px 0 20px;
+  border-radius: 0 5px 5px 0;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.stats {
+  min-height: 200px;
+}
