@@ -261,14 +261,14 @@ $(document).ready(function() {
     console.log("player one inflicts this damage: ", player1Damage);
     var orcDamage = orc.weapon.attackDamage();
     console.log("orc inflicts this damage: ", orcDamage);
-
     console.log("orc health: ", orc.health);
-
     console.log("human health: ",playerOne.health);
     orc.health = orc.health - player1Damage;
-    console.log("this is now the orc's health: ", orc.health);
+    playerOne.health = playerOne.health - orcDamage;
+    console.log("The orc's health is now: ", orc.health);
+    console.log(playerOne.playerName, "'s health is now: ", playerOne.health);
+    $("#inputPlayerAttack").text(playerOne.playerName + playerOne.weapon.toString(player1Damage));
     // $("#inputEnemyAttack").text(orc.weapon.toString(orcDamage));
-    // $("#inputPlayerAttack").text(playerOne.weapon.toString(player1Dave));
-    // console.log(playerOne.Weapon.attackDamage);
+    $("#inputEnemyAttack").text("Badguy Bill" + " hits with " + orc.weapon.name + " for " + orcDamage + "!")
   });
 });
